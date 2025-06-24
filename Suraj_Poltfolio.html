@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suraj Mole | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+  background: linear-gradient(135deg, #1e293b, #0f172a, #334155);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+    header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1e293b;
+  padding: 10px 30px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+    header h1 {
+  font-size: 20px;
+  color: #38bdf8;
+}
+    nav a {
+  display: inline-block;
+  display: block;
+  font-size: 14px;
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+    }
+    .hero img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+    }
+    .hero h2 {
+      font-size: 36px;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+    section {
+      padding: 60px 40px;
+    }
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 10px;
+      justify-content: center;
+    }
+    .skills li {
+      background-color: #334155;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+    .certificates {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .certificates img {
+      width: 200px;
+      border-radius: 10px;
+      margin: 10px;
+      transition: 0.3s;
+    }
+    .certificates img:hover {
+      transform: scale(1.05);
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    .contact button {
+      background-color: #38bdf8;
+      color: #000;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .contact-info a {
+      color: #38bdf8;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px;
+    }
+    .signature-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 40px 60px;
+    }
+    .signature-container p {
+      font-style: italic;
+    }
+  @keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+  button:hover, .contact button:hover {
+    background-color: #60a5fa;
+    color: #fff;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+
+  nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s;
+  }
+
+  nav a:hover::after {
+    width: 100%;
+  }
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+  <header data-aos="fade-down">
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <img src="logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    <h1>Suraj Mole</h1>
+  </div>
+  <nav style="margin-top: 10px; display: flex; flex-direction: row; align-items: center; gap: 15px;">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      
+    </nav>
+  </header>
+
+  <div class="hero" data-aos="zoom-in">
+  <div data-aos="flip-left" data-aos-duration="2000">
+    <img src="profile.jpg" alt="Suraj Mole Profile Photo" style="animation: float 3s ease-in-out infinite;">
+    </div>
+    <h2>Hello, I'm Suraj</h2>
+    <p>MCA student and passionate developer with skills in Java, Web, and Python technologies.</p>
+  </div>
+
+  <section id="about" data-aos="fade-right">
+  <h2>About Me</h2>
+  <p><strong>Full Name:</strong> Mr. Suraj Sanjay Mole</p>
+  <p><strong>Date of Birth:</strong> 8th April 2003</p>
+  <p><strong>Gender:</strong> Male</p>
+  <p><strong>Status:</strong> Single</p>
+  <p><strong>Nationality:</strong> Indian</p>
+  <p><strong>Phone:</strong> 7841916103</p>
+  <p><strong>Email:</strong> molesuraj08@gmail.com</p>
+  <p><strong>Address:</strong> Anna Bhau Sathe Nagar, Mohol, Solapur 413213, Maharashtra</p>
+  <p><strong>Location:</strong> Mohol, Tal Mohol, Dist. Solapur, Maharashtra, India</p>
+</section>
+
+<section id="career-objective" data-aos="fade-left">
+  <h2>Career Objective</h2>
+  <p>I am a dynamic professional eager to embrace challenging opportunities that allow me to fully leverage my skills to contribute to the success of the organization. My expertise is a catalyst for growth.</p>
+</section>
+
+<section id="interests" data-aos="fade-right">
+  <h2>Interests</h2>
+  <p>Online mobile gaming, Sports, Exploring new technologies, Building chatbots and web applications.</p>
+</section>
+
+<section id="strengths" data-aos="fade-left">
+  <h2>Strengths</h2>
+  <ul>
+    <li>Quick learner and self-motivated</li>
+    <li>Strong problem-solving skills</li>
+    <li>Effective communication</li>
+    <li>Adaptability to new environments</li>
+    <li>Team collaboration and leadership</li>
+  </ul>
+</section>
+
+  <section id="education" data-aos="fade-left">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>MCA</strong> – SVERI’s College of Engineering, Solapur University (2024–2026, Pursuing)</li>
+      <li><strong>B.Sc (ECS)</strong> – D.B.F Dayanand College, Solapur University (2021–2024)</li>
+      <li><strong>HSC</strong> – Naganath Jr. College, Mohol, Pune Board (2020–2021)</li>
+      <li><strong>SSC</strong> – Netaji College, Mohol, Pune Board (2018–2019)</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>Java</li>
+      <li>Advanced Java</li>
+      <li>Python</li>
+      <li>ASP.NET</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>PHP</li>
+      <li>AngularJS</li>
+      <li>SQL Database</li>
+      <li>Leadership</li>
+    </ul>
+  </section>
+
+  <section id="projects" data-aos="zoom-in-up">
+  <h2>Academic Projects</h2>
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div>
+      <h3>Online Food Order Services</h3>
+      <p>This project allows users to browse food items, add them to cart, and place orders. Admin can manage orders and menus. Technologies used include HTML, CSS, JavaScript, PHP, and MySQL.</p>
+    </div>
+    <div>
+      <h3>Online Crime Reporting Tool <span style='color: #38bdf8;'>(Award-Winning Project)</span></h3>
+      <p><strong>This project was selected for:</strong><br>
+      • Dipex Competition - College, District, and State Level<br>
+      • Avishkar Research Convention - College and University Level</p>
+      $1ASP.NET, HTML/CSS, SQL Server, PHP, and Android$3
+    </div>
+    <div>
+      <h3>Chatbot for College</h3>
+      <p>Interactive chatbot to assist students with college-related queries such as fees, results, events. Implemented with Python, JavaScript, and integrated on the college website.</p>
+    </div>
+  </div>
+</section>
+
+  <section id="certificates" class="certificates" data-aos="fade-up">
+    <h2>Certificates</h2>
+    <img src="certificate1.jpg" alt="Certificate 1">
+    <img src="certificate2.jpg" alt="Certificate 2">
+    <img src="certificate3.jpg" alt="Certificate 3">
+  </section>
+
+  <div style="text-align: center; padding: 20px;">
+    <a href="resume.pdf" download style="background-color: #38bdf8; color: #000; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Download Resume</a>
+  </div>
+  <div class="signature-container">
+    <div>
+      <p style="font-style: italic;">Signature:</p>
+      <p style="font-style: italic;">Suraj Sanjay Mole</p>
+      <img src="sign.png" alt="Digital Signature" style="height: 60px; margin: 5px 0;">
+    </div>
+    <div style="text-align: right;">
+      <p style="font-style: italic;">Date: ____________</p>
+      <p style="font-style: italic;">Place: Mohol</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
